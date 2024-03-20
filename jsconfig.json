@@ -1,7 +1,30 @@
 {
   "compilerOptions": {
+    "target": "es6",
+    "jsx": "react",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/components/*": ["./components/*"],
+      "@/styles/*": ["./styles/*"],
+      "@/lib/*": ["./lib/*"],
+      "@/provider/*": ["./provider/*"],
+      "@/constant/*": ["./constant/*"],
+      "@/db/*": ["./db/*"],
+       "@/app/*": ["./app/*"]
     }
-  }
+  },
+  "exclude": [
+    ".git",
+    ".app-cache",
+    ".npm",
+    ".npm-tmp",
+    "dist",
+    "dist*",
+    "node_modules",
+    "subfolder/dist",
+    "subfolder/node_modules",
+    "**/dist/*",
+    "**/node_modules/*",
+    "build"
+  ]
 }
